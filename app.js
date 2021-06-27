@@ -82,7 +82,7 @@ app.use("/user", require("./routes/user"));
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/home"
+    callbackURL: "https://peaceful-mountain-44087.herokuapp.com/auth/google/home"
   },
   function(accessToken, refreshToken, profile, cb) {
     user.findOrCreate({
@@ -111,7 +111,7 @@ app.get('/auth/google/home',
 passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
     clientSecret: process.env.FACEBOOK_APP_SECRET,
-    callbackURL: "http://localhost:3000/auth/facebook/home"
+    callbackURL: "https://peaceful-mountain-44087.herokuapp.com/auth/facebook/home"
   },
   function(accessToken, refreshToken, profile, cb) {
     user.findOrCreate({
