@@ -1,0 +1,515 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* ====================================main body============================================= */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Merriweather Sans', sans-serif;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+h2.custom_heading {
+  letter-spacing: 6px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 50px auto;
+  word-spacing: 2px;
+  color: #A8D1DF;
+}
+
+h1.custom_heading {
+
+  margin-top: 50px;
+  color: #1f2c38;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  color:#2387B7;
+}
+
+h4.sub_heading {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  word-spacing: 3px;
+  letter-spacing: 3.5px;
+}
+
+/* ======================================================== navbar ================================================ */
+.navbar-brand {
+  letter-spacing: 3px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+}
+
+.nav-bar .nav-item {
+  padding-right: 35px;
+  letter-spacing: 3px;
+}
+
+.nav-bar .nav-item a.nav-link:hover {
+  color: #A8D1DF;
+}
+
+.sticky-top {
+  background-color: #222;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/* =================================================home page============================================ */
+/* ======== poster section ============ */
+.poster {
+  height: 100vh;
+  background-image: url("https://ajmalsadiq.github.io/AAA-Creatives/Img/Banner3.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading span {
+  color: #A8D1DF;
+}
+
+#container {
+  margin-left: 10%;
+  margin-top: 50px;
+  color: #D3D3D3;
+  font-size: 1.9rem;
+  font-weight: bold;
+  width: 100%;
+  bottom: 45%;
+  letter-spacing: 2.5px;
+}
+
+/* ========== 60% width section ============== */
+#cont {
+  background-color: #E4E5E8;
+  width: 60%;
+  align-items: center;
+  margin: -80px auto 0 auto;
+  padding: 8% 5% 5% 5%;
+}
+
+.blog_content {
+  text-align: center;
+}
+
+h1.blog_heading {
+  color: #3D474D;
+  font-weight: 900;
+  line-height: 1.4;
+  word-spacing: 3px;
+  padding: 10px;
+}
+
+h4.wordings {
+  padding-top: 10px;
+  color: #3D474D;
+  font-weight: bold;
+  line-height: 1.6;
+  padding-bottom: 10px;
+}
+.wording{
+  color:#1768AC;
+  line-height: 1.6;
+
+}
+
+.blog-main-points {
+  padding: 5% 8%;
+}
+
+/* ==================  about section in home ================== */
+.about_section {
+  margin: 40px;
+  background-color: #F9F9F9;
+  padding: 5% 8%;
+  text-align: center;
+}
+
+.abt_h1 {
+  color: #1F2C38;
+  line-height: 2;
+}
+
+.abt_h4 {
+  color: #494661;
+  line-height: 1.4;
+  letter-spacing: 1.4;
+}
+
+/* ================ compose poster ================ */
+.post_compose {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+.compose_img {
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  filter: brightness(40%);
+}
+
+.compose_text_block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head_comp {
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 22%;
+  line-height: 1.5;
+}
+
+/* ==========custom button home========== */
+.wrapper {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link_wrapper {
+  position: relative;
+}
+
+a.butt {
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  background: #2387b7;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all .35s;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #666666;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2387b7;
+  transition: all .35s;
+}
+
+a.butt:hover {
+  width: 200px;
+  border: 3px solid #2387b7;
+  background: transparent;
+  color: #2a9fd6;
+}
+
+a.butt:hover+.icon {
+  border: 3px solid #2387b7;
+  right: -25%;
+}
+
+/* =============================================== Compose page ================================================== */
+.compose_body {
+  background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url("https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+  background-size: contain;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#inputdefault {
+  margin-bottom: 20px;
+}
+
+.form_heading {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.thumnail_heading {
+  color: white;
+  margin: 20px 0;
+}
+
+/* --------------------custom image animation compose-------------------- */
+.card_container {
+  padding: 20px;
+}
+
+.compose_card {
+  height: 30vh;
+}
+
+div.snip1321 {
+  color: white;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+
+div.snip1321 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+div.snip1321 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+div.snip1321 figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+
+div.snip1321:after {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+
+div.snip1321:hover figcaption,
+div.snip1321.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+div.snip1321:hover:after,
+div.snip1321.hover:after {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 0.9;
+}
+
+.btnn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 1px;
+  text-shadow: 3px 1px 4px #666666;
+  -webkit-box-shadow: 4px 1px 10px #666666;
+  -moz-box-shadow: 4px 1px 10px #666666;
+  box-shadow: 4px 1px 10px #666666;
+  color: #121012;
+  font-size: 20px;
+  font-weight: 500;
+  background: transparent;
+  padding: 5px 10px;
+  border: solid black 2px;
+  text-decoration: none;
+}
+
+.btnn:hover {
+  background: white;
+  text-decoration: none;
+  border: none;
+}
+
+/* -------------- custom submit button ---------------- */
+.compose_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 40px auto 80px auto;
+}
+
+.compose_wrap button {
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+  height: 40px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #2387B7;
+  background: transparent;
+  color: #2387B7;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.compose_wrap button:hover {
+  background: #2387B7;
+  color: #fff;
+}
+
+/* ============================================post page================================================== */
+.content_post {
+  padding-top: 60px;
+  align-items: center;
+  text-align: center;
+  line-height: 2.4;
+}
+
+h1.post_heading {
+  color: #022E57;
+  margin:  10px 20px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.delete{
+  text-decoration: none;
+  color:white;
+}
+.delete:hover{
+  text-decoration: none;
+}
+.edit-btn {
+  background-color: #1768AC;
+  margin: 5px 10px;
+  color: white;
+}
+.edit-btn:hover {
+  background-color: #A8D1DF;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #F5A962;
+  margin: 5px 10px;
+  background-color: #1abc9c;
+  color: white;
+  text-decoration: none;
+}
+
+.delete-btn:hover {
+  background-color: #b1dfdc;
+}
+
+.blog_img {
+  width: 70%;
+  margin: 30px auto;
+  align-items: center;
+}
+
+.post_par {
+  white-space: pre-line;
+  padding: 10px 40px 20px 40px;
+}
+
+/* ==================================================  edit page ================================================== */
+.edit_page {
+  margin: 50px;
+}
+
+.form_input {
+  box-shadow: 6px 7px 15px -1px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 6px 7px 15px -1px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 6px 7px 15px -1px rgba(0, 0, 0, 0.7);
+}
+
+/* =================================================media query================================================== */
+@media(max-width:990px) {
+  .navbar {
+    background-color: black;
+  }
+
+  .text_block {
+    padding: 30px;
+  }
+
+  #cont {
+    width: 90%;
+  }
+
+  .compose_body {
+    background-size: cover;
+  }
+
+  .blog_img {
+    max-width: 100%;
+  }
+}
+
+/* ===================================================== animations ================================================== */
+/* ------------------whole page fade in------------------ */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

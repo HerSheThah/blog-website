@@ -1,0 +1,38 @@
+<%- include('partials/header') -%>
+
+<body class="compose_body">
+  <div class="container">
+    <h2 class="custom_heading">COMPOSE YOUR OWN BLOG</h2>
+    <form action="/compose" method="post" enctype="multipart/form-data">
+      <!-- ================Title and entry box=================== -->
+      <div class="form-group">
+        <label for="inputdefault" class="form_heading">Title</label>
+        <input class="form-control" id="inputdefault" type="text" name="title" autofocus required autocomplete="off">
+        <label for="comment" class="form_heading">Entry</label>
+        <textarea class="form-control" rows="5" id="comment" name="comment" autofocus required></textarea>
+      </div>
+      <h3 class="thumnail_heading">Choose your thumbnail here</h3>
+      <!-- ================List of thumbnails ================ -->
+      <div class="row">
+        <%  imageslist.forEach(function(image_url){ %>
+        <div class="col-md-3 card_container">
+          <div class="card snip1321">
+            <img class="card-img-top compose_card" src="<%=image_url%>" alt="Card image cap">
+            <figcaption>
+              <button type="submit" name="img_selected" value="<%=image_url%>" class="btnn">Use</button>
+            </figcaption>
+          </div>
+        </div>
+        <%  })  %>
+      </div>
+      <!-- ================custom thumnail================ -->
+      <h3 class="thumnail_heading">Or choose your own thumbnail</h3>
+      <input class="form-control form-control-lg" id="formFileLg" type="file" name='avatar' />
+      <div class="compose_wrap">
+        <button type="submit" name="button" class="">
+          <span>Publish</span>
+        </button>
+      </div>
+    </form>
+    <!-- ================footer================ -->
+    <%- include('partials/footer') -%>

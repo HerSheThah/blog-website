@@ -1,0 +1,19 @@
+body {
+  background-color: #d8e3e7;
+  padding: 70px 100px;
+  align-items: center;
+  text-align: center;
+}
+
+h1.emoji {
+  font-size: 7rem;
+  color: #454746
+}
+
+
+/* TODO:  */
+/* 1.delete confirm
+3.sign in option
+4.about us content
+5.main page content
+6.starting files foe db */

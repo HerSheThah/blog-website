@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- custom style sheet -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- favicon -->
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar_top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Daily Journal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 nav-bar">
+          <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blogs">BLOGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#compose_post">COMPOSE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/user/logout">LOG OUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<body>
+  <!-- =============================================== top poster ==================================================== -->
+  <div class="poster">
+    <div class="text_block">
+      <h1 class="heading"><span>J</span>ust Start <span>O</span>ut</h1>
+      <div id="container">
+        <div class="">
+          Launch
+        </div>
+        <div class="">
+          your blog with
+        </div>
+        <div class="" style="color:#A8D1DF">
+          AWESOME
+        </div>
+        styles!
+      </div>
+    </div>
+  </div>
+  <!-- ===============================================60% width container=================================================== -->
+  <section id="cont">
+    <div class="blog_content">
+      <h1 class="blog_heading">How to Create High-Value Content</h1>
+      <h4 class="wording">Writing great blog posts isn't easy. But it's not rocket science either!</h4>
+    </div>
+    <!-- ===================== custom photos ===================== -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="card-img-top cust_img" src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2017/11/I-love-blogers.jpg" alt="Card image cap">
+        </div>
+        <div class="col-md-6">
+          <img class="card-img-top cust_img" src="https://neilpatel.com/wp-content/uploads/2017/09/blog-post-image-guide.jpg" alt="Card image cap">
+        </div>
+      </div>
+    </div>
+    <!-- =============== custom content ================ -->
+    <div class="blog-main-points">
+      <% blog_steps.forEach((step, index)=>{ %>
+      <h4 class="wordings"><%=index+1%>. <%=step.title%></h4>
+      <p class="p"><%=step.para%></p>
+      <% }) %>
+    </div>
+  </section>
+  <!-- ================================================ about ================================================================ -->
+  <div class="about_section">
+    <h1 class="abt_h1">About</h1>
+    <h4 class="abt_h4">This website helps in maintaining one's own personal blogs. One can custom their own blogs with their very own images. This platform is a nice editing app explicitly used for maintaining blogs.</h4>
+  </div>
+  <!-- ================================================ compose section ================================================================ -->
+  <div id="compose_post" class="post_compose">
+    <img class="compose_img" src="https://images.unsplash.com/photo-1504193902866-27cfb5aafcc8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGV4cGxvcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="img">
+    <div class="compose_text_block">
+      <h1 class="head_comp">Light Your Writing On Fire</h1>
+      <div class="wrapper">
+        <div class="link_wrapper">
+          <a class="butt" href="/compose">Compose Yours</a>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+              <path
+                d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========================================================= footer ============================================================ -->
+  <%- include("partials/footer") -%>
