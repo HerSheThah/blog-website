@@ -1,15 +1,21 @@
 body {
   background-color: #d8e3e7;
-  padding: 70px 100px;
   align-items: center;
   text-align: center;
+  justify-content: center;
+}
+.container{
+  padding:  100px 60px;
 }
 
 h1.emoji {
-  font-size: 7rem;
+  font-size: 2rem;
+  padding: 20px;
   color: #454746
 }
-
+h1, h5{
+  color:#222;
+}
 
 /* TODO:  */
 /* 1.delete confirm

@@ -1,0 +1,15 @@
+<%- include('partials/fb_style') %>
+
+  <!-- ===================emoji for feedback indication======================== -->
+  <div class="container">
+    <h1 class="emoji">\(o_o)/</h1>
+    <h1>Failure!</h1>
+    <!-- ================== feedback ======================== -->
+    <h5>There is a problem signing in. The entered mail could have already been registered or the mail id must be wrong. Please try again later.</h5>
+    <form action="/failure" method="post">
+      <button class="btn btn-warning" type="submit" name="button">Try again</button>
+    </form>
+  </div>
+
+</body>
+</html>

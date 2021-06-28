@@ -227,9 +227,9 @@ app.post("/contact", function(req, res) {
     const response = await mailchimp.lists.batchListMembers(process.env.MAILCHIMP_BENCHID, data)
     console.log(response.errors.error)
     if (response.error_count == 0) {
-      res.sendFile(__dirname + "/success.html")
+      res.render("success");
     } else {
-      res.sendFile(__dirname + "/failure.html")
+      res.render("failure");
     }
   };
   run();
