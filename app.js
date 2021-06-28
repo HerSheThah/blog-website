@@ -164,7 +164,7 @@ app.get("/compose", ensureAuth, function(req, res) {
     imageslist: custom_functions.getimages()
   })
 })
-app.post("/compose", upload.single('avatar'), function(req, res) {
+app.post("/compose", upload.single('photo'), function(req, res) {
   var img_path;
   if (req.file != null) {
     // user file

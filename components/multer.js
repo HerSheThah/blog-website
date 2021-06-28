@@ -2,13 +2,20 @@ const multer = require('multer');
 const express = require("express");
 
 var storage = multer.diskStorage({
-  destination: function(req, file, cb) {
-    cb(null, './public/uploads/');
-  },
-  filename: function(req, file, cb) {
-    cb(null, Date.now() + '.jpg');
-  }
-})
+        destination: './public/uploads',
+        filename: function (req, file, cb) {
+            switch (file.mimetype) {
+                case 'image/jpeg':
+                    ext = '.jpeg';
+                    break;
+                case 'image/png':
+                    ext = '.png';
+                    break;
+            }
+            cb(null, file.originalname + ext);
+        }
+    });
+
 var upload = multer({
   storage: storage
 });
